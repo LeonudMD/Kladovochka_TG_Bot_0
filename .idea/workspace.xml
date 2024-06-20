@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dispatcher/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/DispatcherApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dispatcher/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718895881720</updated>
-      <workItem from="1718895882869" duration="3521000" />
+      <workItem from="1718895882869" duration="6060000" />
     </task>
     <servers />
   </component>

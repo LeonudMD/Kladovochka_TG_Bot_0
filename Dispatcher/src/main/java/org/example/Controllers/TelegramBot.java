@@ -1,10 +1,11 @@
 package org.example.Controllers;
-
+import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
+@Log4j
 @Component
 public class TelegramBot extends TelegramLongPollingBot {
 
@@ -27,6 +28,8 @@ public class TelegramBot extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         var Message = update.getMessage();
-        System.out.println(Message.getText());
+        log.debug(Message.getText());
     }
+
+
 }
