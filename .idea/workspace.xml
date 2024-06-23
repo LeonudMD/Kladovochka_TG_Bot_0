@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dispatcher/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2i9HThnNxo3a6DsyaULsO22hcqL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -48,10 +48,12 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Structure__and__StartBot",
     "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/1/Desktop/CalculatorApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,7 +85,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1718895881720</updated>
-      <workItem from="1718895882869" duration="6060000" />
+      <workItem from="1718895882869" duration="9115000" />
+      <workItem from="1719128484615" duration="774000" />
+      <workItem from="1719153283447" duration="134000" />
     </task>
     <servers />
   </component>
