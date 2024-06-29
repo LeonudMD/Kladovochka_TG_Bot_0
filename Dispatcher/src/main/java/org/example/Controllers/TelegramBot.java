@@ -7,15 +7,27 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import javax.annotation.PostConstruct;
+
 @Log4j
 @Component
 public class TelegramBot extends TelegramLongPollingBot {
 
     @Value("${bot.name}")
     String botName;
-
     @Value("${bot.token}")
     String botToken;
+    private UpdateController updateController;
+
+    public TelegramBot(UpdateController updateController) {
+        this.updateController = updateController;
+    }
+
+    @PostConstruct
+    public void init() {
+        updateController.registerBot(this);
+    }
+
 
     @Override
     public String getBotUsername() {
