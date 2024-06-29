@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Common-RabitMQ/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common-RabitMQ/src/main/java/org/example/Models/RabbitQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/AnswerConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impl/UpdateProducerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/UpdateProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -46,7 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Structure__and__StartBot",
+    "git-widget-placeholder": "Working__branch__0",
     "jdk.selected.JAVA_MODULE": "19",
     "last_opened_file_path": "C:/Users/1/Desktop/CalculatorApp",
     "node.js.detected.package.eslint": "true",
@@ -88,6 +95,8 @@
       <workItem from="1718895882869" duration="9115000" />
       <workItem from="1719128484615" duration="774000" />
       <workItem from="1719153283447" duration="134000" />
+      <workItem from="1719240754450" duration="1036000" />
+      <workItem from="1719652088964" duration="6786000" />
     </task>
     <servers />
   </component>
