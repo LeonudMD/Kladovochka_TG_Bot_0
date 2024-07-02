@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common-RabitMQ/src/main/java/org/example/Models/RabbitQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-RabitMQ/src/main/java/org/example/Models/RabbitQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Configurations/RabbitConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Configurations/RabbitConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impl/UpdateProducerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impl/UpdateProducerImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,7 @@
       <workItem from="1719240754450" duration="1036000" />
       <workItem from="1719652088964" duration="6786000" />
       <workItem from="1719825854261" duration="3342000" />
-      <workItem from="1719911393339" duration="2248000" />
+      <workItem from="1719911393339" duration="3636000" />
     </task>
     <servers />
   </component>
