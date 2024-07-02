@@ -1,4 +1,4 @@
-package org.example.Services.Impl;
+package org.example.Services.Impls;
 
 import lombok.extern.log4j.Log4j;
 import org.example.Services.UpdateProducer;

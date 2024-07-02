@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Node_0/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/ConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/ConsumerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/ProducerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/ProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node_0/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node_0/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common-RabitMQ/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Node_0Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impl/UpdateProducerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impls/UpdateProducerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +57,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Working__branch",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/1/Desktop/CalculatorApp",
+    "last_opened_file_path": "C:/Users/1/Desktop/Kladovochka_V0/Node_0/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,7 +67,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\Kladovochka_V0\Node_0\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Node_0Application">
     <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Dispatcher" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DispatcherApplication" />
@@ -74,8 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Node_0Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Node_0" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Node_0Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Node_0Application" />
         <item itemvalue="Spring Boot.DispatcherApplication" />
       </list>
     </recent_temporary>
@@ -94,7 +120,7 @@
       <workItem from="1719240754450" duration="1036000" />
       <workItem from="1719652088964" duration="6786000" />
       <workItem from="1719825854261" duration="3342000" />
-      <workItem from="1719911393339" duration="4435000" />
+      <workItem from="1719911393339" duration="7260000" />
     </task>
     <servers />
   </component>
