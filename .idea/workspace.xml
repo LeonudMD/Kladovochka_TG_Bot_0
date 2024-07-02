@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/ConsumerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/ConsumerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/ProducerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/ProducerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node_0/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Node_0/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common-RabitMQ/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Node_0Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impl/UpdateProducerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impls/UpdateProducerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node_0/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Configurations/RabbitConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/ConsumerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/ProducerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/ProducerServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +62,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\1\Desktop\Kladovochka_V0\Node_0\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.Configurations" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Node_0Application">
     <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -120,7 +114,7 @@
       <workItem from="1719240754450" duration="1036000" />
       <workItem from="1719652088964" duration="6786000" />
       <workItem from="1719825854261" duration="3342000" />
-      <workItem from="1719911393339" duration="7260000" />
+      <workItem from="1719911393339" duration="8000000" />
     </task>
     <servers />
   </component>
