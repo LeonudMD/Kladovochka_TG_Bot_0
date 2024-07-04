@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>737</IntrospectionStateNumber>
+      <IntrospectionStateNumber>748</IntrospectionStateNumber>
       <ServerVersion>14.5</ServerVersion>
       <StartupTime>1720087925</StartupTime>
       <TimeZones>true ACDT
@@ -1395,7 +1395,7 @@ true posixrules
 13391||10|C|G
 13391||-9223372036854775808|U|G
 13391||10|U|G</Grants>
-      <IntrospectionStateNumber>737</IntrospectionStateNumber>
+      <IntrospectionStateNumber>748</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>userok</OwnerName>
     </database>
@@ -4825,23 +4825,74 @@ true posixrules
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>737</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2024-07-04.14:17:56.512</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-07-04.10:17:56</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>748</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2024-07-04.19:01:51.103</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-07-04.15:01:51</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>userok</OwnerName>
     </schema>
-    <table id="263" parent="262" name="test_table">
-      <ObjectId>16385</ObjectId>
-      <StateNumber>736</StateNumber>
+    <sequence id="263" parent="262" name="raw_data_id_seq">
+      <DasType>bigint|0s</DasType>
+      <ObjectId>16390</ObjectId>
+      <SequenceIdentity>1(8)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>740</StateNumber>
+      <OwnerName>userok</OwnerName>
+    </sequence>
+    <table id="264" parent="262" name="raw_data">
+      <ObjectId>16391</ObjectId>
+      <StateNumber>740</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>userok</OwnerName>
     </table>
-    <column id="264" parent="263" name="name">
+    <table id="265" parent="262" name="test_table">
+      <ObjectId>16385</ObjectId>
+      <StateNumber>738</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>userok</OwnerName>
+    </table>
+    <column id="266" parent="264" name="id">
+      <DasType>bigint|0s</DasType>
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>740</StateNumber>
+      <SequenceId>16390</SequenceId>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="267" parent="264" name="event">
+      <DasType>jsonb|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>740</StateNumber>
+      <TypeId>3802</TypeId>
+    </column>
+    <index id="268" parent="264" name="raw_data_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16396</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>740</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="269" parent="264" name="raw_data_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16397</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>740</StateNumber>
+      <UnderlyingIndexId>16396</UnderlyingIndexId>
+    </key>
+    <column id="270" parent="265" name="name">
       <DasType>text|0s</DasType>
       <Position>1</Position>
       <StateNumber>736</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="271" parent="265" name="email">
+      <DasType>text|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>738</StateNumber>
       <TypeId>25</TypeId>
     </column>
   </database-model>
