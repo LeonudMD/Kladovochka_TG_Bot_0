@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Dependencies__SQL",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/1/Desktop/Kladovochka_V0/Node_0/src/main/resources",
     "node.js.detected.package.eslint": "true",
@@ -125,7 +126,7 @@
       <workItem from="1719911393339" duration="9485000" />
       <workItem from="1719993343117" duration="2226000" />
       <workItem from="1719999249210" duration="1938000" />
-      <workItem from="1720084721154" duration="3268000" />
+      <workItem from="1720084721154" duration="4361000" />
     </task>
     <servers />
   </component>
