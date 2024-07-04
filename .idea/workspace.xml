@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common-RabitMQ/src/main/java/org/example/Models/RabbitQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-RabitMQ/src/main/java/org/example/Models/RabbitQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Node_0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Node_0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Rabbit__link",
+    "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/1/Desktop/Kladovochka_V0/Node_0/src/main/resources",
     "node.js.detected.package.eslint": "true",
@@ -62,6 +59,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.editor.code.editing",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -123,6 +125,7 @@
       <workItem from="1719911393339" duration="9485000" />
       <workItem from="1719993343117" duration="2226000" />
       <workItem from="1719999249210" duration="1938000" />
+      <workItem from="1720084721154" duration="3268000" />
     </task>
     <servers />
   </component>
