@@ -31,7 +31,7 @@ public class UpdateController {
             return;
         }
         
-        if (update.getMessage() != null) {
+        if (update.hasMessage()) {
             distributeMessangesbyType(update);
         }
         else {
@@ -41,13 +41,13 @@ public class UpdateController {
 
     private void distributeMessangesbyType(Update update) {
         var message = update.getMessage();
-        if (message.getText() != null) {
+        if (message.hasText()) {
             processTextMessage(update);
         }
-        else if (message.getDocument() != null) {
+        else if (message.hasDocument()) {
             processDocMessage(update);
         }
-        else if (message.getPhoto() != null) {
+        else if (message.hasPhoto()) {
             processPhotoMessage(update);
         }
         else {
