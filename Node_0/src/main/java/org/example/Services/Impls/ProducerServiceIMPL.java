@@ -8,10 +8,10 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import static org.example.Models.RabbitQueue.ANSWER_MESSAGE;
 
 @Service
-public class ProducerServiceImpl implements ProducerService {
+public class ProducerServiceIMPL implements ProducerService {
     private final RabbitTemplate rabbitTemplate;
 
-    public ProducerServiceImpl(RabbitTemplate rabbitTemplate) {
+    public ProducerServiceIMPL(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
     }
 
