@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impls/AnswerConsumerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common-RabitMQ/src/main/java/org/example/Models/RabbitQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-RabitMQ/src/main/java/org/example/Models/RabbitQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Node_0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Node_0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateController.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/logs/Node_0.log" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -45,7 +52,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Working__branch",
+    "git-widget-placeholder": "Rabbit__link",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/1/Desktop/Kladovochka_V0/Node_0/src/main/resources",
     "node.js.detected.package.eslint": "true",
@@ -53,7 +60,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.editor.code.editing",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -65,7 +72,7 @@
       <recent name="org.example.Configurations" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DispatcherApplication">
+  <component name="RunManager" selected="Spring Boot.Node_0Application">
     <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Dispatcher" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DispatcherApplication" />
@@ -94,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.DispatcherApplication" />
         <item itemvalue="Spring Boot.Node_0Application" />
+        <item itemvalue="Spring Boot.DispatcherApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -113,7 +120,9 @@
       <workItem from="1719240754450" duration="1036000" />
       <workItem from="1719652088964" duration="6786000" />
       <workItem from="1719825854261" duration="3342000" />
-      <workItem from="1719911393339" duration="8601000" />
+      <workItem from="1719911393339" duration="9485000" />
+      <workItem from="1719993343117" duration="2226000" />
+      <workItem from="1719999249210" duration="1938000" />
     </task>
     <servers />
   </component>
