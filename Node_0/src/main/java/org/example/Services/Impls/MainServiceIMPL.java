@@ -4,6 +4,7 @@ import lombok.extern.log4j.Log4j;
 import org.example.DAO.AppUsersDAO;
 import org.example.DAO.RawDataDAO;
 import org.example.Entity.AppDocument;
+import org.example.Entity.AppPhoto;
 import org.example.Entity.AppUsers;
 import org.example.Entity.RawData;
 import org.example.Exeptions.UploadFileException;
@@ -102,9 +103,17 @@ public class MainServiceIMPL implements MainService {
             return;
         }
 
-        var answer = "Фото успешно загружен! Ссылка на скачивание: ///////// ";
-        sendAnswer(answer, chatID);
-
+        try {
+            AppPhoto photo = fileService.processPhoto(update.getMessage());
+            //TODO добавить генерацию ссылки для скачивания фото
+            var answer = "Фото успешно загружено! "
+                    + "Ссылка для скачивания: http://test.ru/get-photo/777";
+            sendAnswer(answer, chatID);
+        } catch (UploadFileException ex) {
+            log.error(ex);
+            String error = "К сожалению, загрузка фото не удалась. Повторите попытку позже.";
+            sendAnswer(error, chatID);
+        }
     }
 
     private boolean isNotAllowToSendContent(Long chatID, AppUsers appUser) {
