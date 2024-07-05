@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/DAO/AppUsersDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/Enums/UsersState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common-JPA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Common-JPA/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/Enums/UsersState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/Enums/UsersState.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +57,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.editor.code.editing",
     "vue.rearranger.settings.migration": "true"
   },
@@ -129,7 +129,7 @@
       <workItem from="1719993343117" duration="2226000" />
       <workItem from="1719999249210" duration="1938000" />
       <workItem from="1720084721154" duration="10264000" />
-      <workItem from="1720161242347" duration="3152000" />
+      <workItem from="1720161242347" duration="3771000" />
     </task>
     <servers />
   </component>

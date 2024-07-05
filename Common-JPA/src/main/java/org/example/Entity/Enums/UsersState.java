@@ -1,4 +1,7 @@
 package org.example.Entity.Enums;
 
-public class UsersState {
+public enum UsersState {
+    BASIC_STATE,
+    WAIT_FOR_EMAIL_STATE
+
 }
