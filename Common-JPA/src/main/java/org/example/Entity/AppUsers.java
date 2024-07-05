@@ -27,7 +27,7 @@ public class AppUsers {
 
     @CreationTimestamp
     private LocalDateTime firstLoginDate;
-    
+
     private String firstName;
 
     private String lastName;
