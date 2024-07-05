@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>748</IntrospectionStateNumber>
+      <IntrospectionStateNumber>740</IntrospectionStateNumber>
       <ServerVersion>14.5</ServerVersion>
-      <StartupTime>1720087925</StartupTime>
+      <StartupTime>1720163171</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1395,7 +1395,7 @@ true posixrules
 13391||10|C|G
 13391||-9223372036854775808|U|G
 13391||10|U|G</Grants>
-      <IntrospectionStateNumber>748</IntrospectionStateNumber>
+      <IntrospectionStateNumber>740</IntrospectionStateNumber>
       <ObjectId>16384</ObjectId>
       <OwnerName>userok</OwnerName>
     </database>
@@ -1407,17 +1407,17 @@ true posixrules
     <role id="4" parent="1" name="pg_database_owner">
       <ObjectId>6171</ObjectId>
     </role>
-    <role id="5" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
+    <role id="5" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
     </role>
-    <role id="6" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
-    </role>
-    <role id="7" parent="1" name="pg_monitor">
+    <role id="6" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
       <RoleGrants>3374
 3375
 3377</RoleGrants>
+    </role>
+    <role id="7" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
     </role>
     <role id="8" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
@@ -1425,20 +1425,20 @@ true posixrules
     <role id="9" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="10" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="11" parent="1" name="pg_read_server_files">
+    <role id="10" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="12" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
-    </role>
-    <role id="13" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
-    </role>
-    <role id="14" parent="1" name="pg_signal_backend">
+    <role id="11" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
+    </role>
+    <role id="14" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
     </role>
     <role id="15" parent="1" name="userok">
       <BypassRls>1</BypassRls>
@@ -4825,75 +4825,144 @@ true posixrules
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>748</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2024-07-04.19:01:51.103</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-07-04.15:01:51</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>740</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2024-07-05.13:47:52.849</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-07-05.09:47:53</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>userok</OwnerName>
     </schema>
-    <sequence id="263" parent="262" name="raw_data_id_seq">
+    <sequence id="263" parent="262" name="app_users_id_seq">
       <DasType>bigint|0s</DasType>
-      <ObjectId>16390</ObjectId>
-      <SequenceIdentity>1(8)</SequenceIdentity>
+      <ObjectId>16385</ObjectId>
+      <SequenceIdentity>1(2)</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>740</StateNumber>
+      <StateNumber>735</StateNumber>
       <OwnerName>userok</OwnerName>
     </sequence>
-    <table id="264" parent="262" name="raw_data">
-      <ObjectId>16391</ObjectId>
-      <StateNumber>740</StateNumber>
+    <sequence id="264" parent="262" name="raw_data_id_seq">
+      <DasType>bigint|0s</DasType>
+      <ObjectId>16393</ObjectId>
+      <SequenceIdentity>1(2)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>736</StateNumber>
+      <OwnerName>userok</OwnerName>
+    </sequence>
+    <table id="265" parent="262" name="app_users">
+      <ObjectId>16386</ObjectId>
+      <StateNumber>735</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>userok</OwnerName>
     </table>
-    <table id="265" parent="262" name="test_table">
-      <ObjectId>16385</ObjectId>
-      <StateNumber>738</StateNumber>
+    <table id="266" parent="262" name="raw_data">
+      <ObjectId>16394</ObjectId>
+      <StateNumber>736</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>userok</OwnerName>
     </table>
-    <column id="266" parent="264" name="id">
+    <column id="267" parent="265" name="id">
       <DasType>bigint|0s</DasType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>740</StateNumber>
-      <SequenceId>16390</SequenceId>
+      <StateNumber>735</StateNumber>
+      <SequenceId>16385</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="267" parent="264" name="event">
-      <DasType>jsonb|0s</DasType>
+    <column id="268" parent="265" name="email">
+      <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
-      <StateNumber>740</StateNumber>
-      <TypeId>3802</TypeId>
+      <StateNumber>735</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
-    <index id="268" parent="264" name="raw_data_pkey">
+    <column id="269" parent="265" name="first_login_date">
+      <DasType>timestamp|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>735</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="270" parent="265" name="first_name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>735</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="271" parent="265" name="is_active">
+      <DasType>boolean|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>735</StateNumber>
+      <TypeId>16</TypeId>
+    </column>
+    <column id="272" parent="265" name="last_name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>735</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="273" parent="265" name="state">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>7</Position>
+      <StateNumber>735</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="274" parent="265" name="telegram_user_id">
+      <DasType>bigint|0s</DasType>
+      <Position>8</Position>
+      <StateNumber>735</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="275" parent="265" name="user_name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>9</Position>
+      <StateNumber>735</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="276" parent="265" name="app_users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16396</ObjectId>
+      <ObjectId>16391</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>740</StateNumber>
+      <StateNumber>735</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="269" parent="264" name="raw_data_pkey">
+    <key id="277" parent="265" name="app_users_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16397</ObjectId>
+      <ObjectId>16392</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>740</StateNumber>
-      <UnderlyingIndexId>16396</UnderlyingIndexId>
+      <StateNumber>735</StateNumber>
+      <UnderlyingIndexId>16391</UnderlyingIndexId>
     </key>
-    <column id="270" parent="265" name="name">
-      <DasType>text|0s</DasType>
+    <column id="278" parent="266" name="id">
+      <DasType>bigint|0s</DasType>
+      <IdentityKind>by-default</IdentityKind>
+      <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>736</StateNumber>
-      <TypeId>25</TypeId>
+      <SequenceId>16393</SequenceId>
+      <TypeId>20</TypeId>
     </column>
-    <column id="271" parent="265" name="email">
-      <DasType>text|0s</DasType>
+    <column id="279" parent="266" name="event">
+      <DasType>jsonb|0s</DasType>
       <Position>2</Position>
-      <StateNumber>738</StateNumber>
-      <TypeId>25</TypeId>
+      <StateNumber>736</StateNumber>
+      <TypeId>3802</TypeId>
     </column>
+    <index id="280" parent="266" name="raw_data_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16399</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>736</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="281" parent="266" name="raw_data_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16400</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>736</StateNumber>
+      <UnderlyingIndexId>16399</UnderlyingIndexId>
+    </key>
   </database-model>
 </dataSource>

@@ -36,6 +36,8 @@ public class AppUsers {
 
     private String email;
 
+    private Boolean isActive;
+
     @Enumerated(EnumType.STRING)
     private UsersState state;
 
