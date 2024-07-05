@@ -32,11 +32,13 @@ public class ConsumerServiceIMPL implements ConsumerService {
     @Override
     public void consumeDocMessageUpdate(Update update) {
         log.debug("NODE: Док сообщение было доставленно");
+        mainService.processDocMessage(update);
     }
 
     @RabbitListener(queues = PHOTO_MESSAGE_UPDATE)
     @Override
     public void consumePhotoMessageUpdate(Update update) {
         log.debug("NODE: Фото сообщение было доставленно");
+        mainService.processPhotoMessage(update);
     }
 }

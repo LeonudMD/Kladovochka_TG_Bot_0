@@ -59,12 +59,46 @@ public class MainServiceIMPL implements MainService {
 
     @Override
     public void processDocMessage(Update update) {
-        
+        saveRawData(update);
+
+        var chatID = update.getMessage().getChatId();
+        var appUser = findOrSaveUser(update);
+
+        if (isNotAllowToSendContent(chatID, appUser)) {
+            return;
+        }
+
+        var answer = "Документ успешно загружен! Ссылка на скачивание: ///////// ";
+        sendAnswer(answer, chatID);
+
     }
 
     @Override
     public void processPhotoMessage(Update update) {
+        saveRawData(update);
 
+        var chatID = update.getMessage().getChatId();
+        var appUser = findOrSaveUser(update);
+
+        if (isNotAllowToSendContent(chatID, appUser)) {
+            return;
+        }
+
+        var answer = "Фото успешно загружен! Ссылка на скачивание: ///////// ";
+        sendAnswer(answer, chatID);
+
+    }
+
+    private boolean isNotAllowToSendContent(Long chatID, AppUsers appUser) {
+        var userState = appUser.getState();
+        if (!appUser.getIsActive()) {
+            var error = "Зарегистрируйтесь или активируйте свою учётную запись для загрузки контента.";
+            return true;
+        } else if (!BASIC_STATE.equals(userState)) {
+            var error = "Отмените текущую команду с помощью /сфтсуд для отправки файлов";
+            return true;
+        }
+        return false;
     }
 
     private void sendAnswer(String output, Long chatID) {
