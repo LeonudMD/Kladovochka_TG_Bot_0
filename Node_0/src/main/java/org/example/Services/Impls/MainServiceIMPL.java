@@ -1,9 +1,9 @@
 package org.example.Services.Impls;
 
+import lombok.extern.log4j.Log4j;
 import org.example.DAO.AppUsersDAO;
 import org.example.DAO.RawDataDAO;
 import org.example.Entity.AppUsers;
-import org.example.Entity.Enums.UsersState;
 import org.example.Entity.RawData;
 import org.example.Services.MainService;
 import org.example.Services.ProducerService;
@@ -13,8 +13,14 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.User;
 
 import static org.example.Entity.Enums.UsersState.BASIC_STATE;
+import static org.example.Entity.Enums.UsersState.WAIT_FOR_EMAIL_STATE;
+import static org.example.Services.Enums.ServicesCommands.CANCEL;
+import static org.example.Services.Enums.ServicesCommands.HELP;
+import static org.example.Services.Enums.ServicesCommands.REGISTRATION;
+import static org.example.Services.Enums.ServicesCommands.START;
 
 @Service
+@Log4j
 public class MainServiceIMPL implements MainService {
     private final RawDataDAO rawDataDAO;
     private final ProducerService producerService;
@@ -31,18 +37,80 @@ public class MainServiceIMPL implements MainService {
     public void processTextMessage(Update update) {
         saveRawData(update);
 
-        var textMessage = update.getMessage();
-        var telegramUser = textMessage.getFrom();
-        var appUser = findOrSaveUser(telegramUser);
+        var appUser = findOrSaveUser(update);
+        var userState = appUser.getState();
+        var text = update.getMessage().getText();
+        var output = "";
 
-        var message = update.getMessage();
-        var sendMessage = new SendMessage();
-        sendMessage.setChatId(message.getChatId().toString());
-        sendMessage.setText("hi, FROM NODE");
-        producerService.produceAnswer(sendMessage);
+        if (CANCEL.equals(text)) {
+            output = cancelProcess(appUser);
+        } else if (BASIC_STATE.equals(userState)) {
+            output = processServiceCommand(appUser, text);
+        } else if (WAIT_FOR_EMAIL_STATE.equals(userState)) {
+            //TODO обработка емайла
+        } else {
+            log.error("Неизвестная ошибка при обработке команды " + userState);
+            output = "Неизвестная ошибка! Введите /cancel и попробуйте снова...";
+        }
+
+        var chatID = update.getMessage().getChatId();
+        sendAnswer(output, chatID);
     }
 
-    private AppUsers findOrSaveUser(User telegramUser) {
+    @Override
+    public void processDocMessage(Update update) {
+        
+    }
+
+    @Override
+    public void processPhotoMessage(Update update) {
+
+    }
+
+    private void sendAnswer(String output, Long chatID) {
+
+        SendMessage sendMessage = new SendMessage();
+        sendMessage.setChatId(chatID);
+        sendMessage.setText(output);
+        producerService.produceAnswer(sendMessage);
+
+    }
+
+    private String processServiceCommand(AppUsers appUser, String cmd) {
+        if (REGISTRATION.equals(cmd)) {
+            //TODO добавить регистрацию
+            return "Временно недоступно";
+        } else if (HELP.equals(cmd)) {
+            return help();
+        } else if (START.equals(cmd)) {
+            return "Приветствую! Чтобы узнать список всех доступных команд введите /help";
+        } else {
+            return "Неизвестная команда! Чтобы узнать список всех доступных команд введите /help";
+        }
+    }
+
+    private String help() {
+        return """
+        *Доступные команды:*
+
+        \uD83D\uDCCC */help* - показывает это сообщение
+        \uD83D\uDCCB */registration* - регистрация нового пользователя
+        \u274C */cancel* - отмена текущей операции
+        \uD83D\uDC4B */start* - приветственное сообщение и начало работы
+
+        Если у вас есть вопросы или нужна помощь, просто введите одну из команд выше.
+        """;
+    }
+
+
+    private String cancelProcess(AppUsers appUser) {
+        appUser.setState(BASIC_STATE);
+        appUsersDAO.save(appUser);
+        return "Комманда отменена!";
+    }
+
+    private AppUsers findOrSaveUser(Update update) {
+        User telegramUser = update.getMessage().getFrom();
         AppUsers presistentAppUser = appUsersDAO.findAppUsersByTelegramUserId(telegramUser.getId());
         if (presistentAppUser == null) {
             AppUsers transientAppUser = AppUsers.builder()
