@@ -3,8 +3,12 @@ package org.example.Services.Impls;
 import lombok.extern.log4j.Log4j;
 import org.example.DAO.AppUsersDAO;
 import org.example.DAO.RawDataDAO;
+import org.example.Entity.AppDocument;
 import org.example.Entity.AppUsers;
 import org.example.Entity.RawData;
+import org.example.Exeptions.UploadFileException;
+import org.example.Services.Enums.ServicesCommands;
+import org.example.Services.FileService;
 import org.example.Services.MainService;
 import org.example.Services.ProducerService;
 import org.springframework.stereotype.Service;
@@ -25,12 +29,17 @@ public class MainServiceIMPL implements MainService {
     private final RawDataDAO rawDataDAO;
     private final ProducerService producerService;
     private final AppUsersDAO appUsersDAO;
+    private final FileService fileService;
 
 
-    public MainServiceIMPL(RawDataDAO rawDataDAO, ProducerService producerService, AppUsersDAO appUsersDAO) {
+    public MainServiceIMPL(RawDataDAO rawDataDAO,
+                           ProducerService producerService,
+                           AppUsersDAO appUsersDAO,
+                           FileService fileService) {
         this.rawDataDAO = rawDataDAO;
         this.producerService = producerService;
         this.appUsersDAO = appUsersDAO;
+        this.fileService = fileService;
     }
 
     @Override
@@ -42,7 +51,8 @@ public class MainServiceIMPL implements MainService {
         var text = update.getMessage().getText();
         var output = "";
 
-        if (CANCEL.equals(text)) {
+        var serviceCommand = ServicesCommands.fromValue(text);
+        if (CANCEL.equals(serviceCommand)) {
             output = cancelProcess(appUser);
         } else if (BASIC_STATE.equals(userState)) {
             output = processServiceCommand(appUser, text);
@@ -68,9 +78,17 @@ public class MainServiceIMPL implements MainService {
             return;
         }
 
-        var answer = "Документ успешно загружен! Ссылка на скачивание: ///////// ";
-        sendAnswer(answer, chatID);
-
+        try {
+            AppDocument doc = fileService.processDoc(update.getMessage());
+            //TODO Добавить генерацию ссылки для скачивания документа
+            var answer = "Документ успешно загружен! "
+                    + "Ссылка для скачивания: http://test.ru/get-doc/777";
+            sendAnswer(answer, chatID);
+        } catch (UploadFileException ex) {
+            log.error(ex);
+            String error = "К сожалению, загрузка файла не удалась. Повторите попытку позже.";
+            sendAnswer(error, chatID);
+        }
     }
 
     @Override
