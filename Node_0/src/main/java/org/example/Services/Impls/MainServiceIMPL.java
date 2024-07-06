@@ -82,7 +82,7 @@ public class MainServiceIMPL implements MainService {
 
         try {
             AppDocument doc = fileService.processDoc(update.getMessage());
-            String link = fileService.generateLink(doc.getId(), LinkType.GET_DOC)
+            String link = fileService.generateLink(doc.getId(), LinkType.GET_DOC);
             var answer = "Документ успешно загружен! "
                     + "Ссылка для скачивания: " + link;
             sendAnswer(answer, chatID);
