@@ -4,6 +4,8 @@ import lombok.extern.log4j.Log4j;
 import org.example.DAO.AppPhotoDAO;
 import org.example.Entity.AppPhoto;
 import org.example.Exeptions.UploadFileException;
+import org.example.Services.Enums.LinkType;
+import org.example.Utils.CryptoTool;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
@@ -32,16 +34,22 @@ public class FileServiceIMPL implements FileService {
     private String fileInfoUri;
     @Value("${service.file_storage.uri}")
     private String fileStorageUri;
+
+    @Value("${link.address}")
+    private String linkAddress;
     private final AppDocumentDAO appDocumentDAO;
     private final AppPhotoDAO appPhotoDAO;
     private final BinaryContentDAO binaryContentDAO;
+    private final CryptoTool cryptoTool;
 
     public FileServiceIMPL(AppDocumentDAO appDocumentDAO,
                            AppPhotoDAO appPhotoDAO,
-                           BinaryContentDAO binaryContentDAO) {
+                           BinaryContentDAO binaryContentDAO,
+                           CryptoTool cryptoTool) {
         this.appDocumentDAO = appDocumentDAO;
         this.appPhotoDAO = appPhotoDAO;
         this.binaryContentDAO = binaryContentDAO;
+        this.cryptoTool = cryptoTool;
     }
 
     @Override
@@ -73,6 +81,11 @@ public class FileServiceIMPL implements FileService {
         } else {
             throw new UploadFileException("Bad response from telegram service: " + response);
         }
+    }
+
+    public String generateLink(Long docId, LinkType linkType) {
+        var hash = cryptoTool.hashOf(docId);
+        return "http://" + linkAddress + "/" + linkType + "?id=" + hash;
     }
 
     private BinaryContent getPersistentBinaryContent(ResponseEntity<String> response) {
