@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppPhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppPhoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/FileServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/FileServiceIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Node_0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Node_0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +50,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Command__Processing",
+    "git-widget-placeholder": "Rest__Install",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/1/Desktop/Kladovochka_V0/Node_0/src/main/resources",
+    "last_opened_file_path": "C:/Users/1/Desktop/Kladovochka_V0/Rest-Service/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,14 +72,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\Kladovochka_V0\Rest-Service\src\main\resources" />
       <recent name="C:\Users\1\Desktop\Kladovochka_V0\Node_0\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.example.DAO" />
       <recent name="org.example.Configurations" />
+      <recent name="org.example" />
+      <recent name="org.example.DAO" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Node_0Application">
+  <component name="RunManager" selected="Spring Boot.DispatcherApplication">
     <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Dispatcher" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DispatcherApplication" />
@@ -108,10 +108,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Rest_ServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="Rest-Service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Rest_ServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Node_0Application" />
         <item itemvalue="Spring Boot.DispatcherApplication" />
+        <item itemvalue="Spring Boot.Rest_ServiceApplication" />
+        <item itemvalue="Spring Boot.Node_0Application" />
       </list>
     </recent_temporary>
   </component>
@@ -134,10 +148,27 @@
       <workItem from="1719999249210" duration="1938000" />
       <workItem from="1720084721154" duration="10264000" />
       <workItem from="1720161242347" duration="14332000" />
+      <workItem from="1720259301935" duration="8161000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Rest_ServiceApplication.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateController.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
