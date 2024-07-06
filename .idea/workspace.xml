@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="" />
+    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Services/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -69,9 +72,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\Kladovochka_V0\Rest-Service\src\main\resources" />
       <recent name="C:\Users\1\Desktop\Kladovochka_V0\Node_0\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example" />
       <recent name="org.example.DAO" />
       <recent name="org.example.Configurations" />
     </key>
@@ -143,7 +148,7 @@
       <workItem from="1719999249210" duration="1938000" />
       <workItem from="1720084721154" duration="10264000" />
       <workItem from="1720161242347" duration="14332000" />
-      <workItem from="1720259301935" duration="605000" />
+      <workItem from="1720259301935" duration="1177000" />
     </task>
     <servers />
   </component>
@@ -156,7 +161,7 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Rest_ServiceApplication.java</url>
           <line>6</line>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
