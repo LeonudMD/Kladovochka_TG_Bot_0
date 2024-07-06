@@ -14,6 +14,7 @@
         <module>Node_0</module>
         <module>Common-JPA</module>
         <module>Rest-Service</module>
+        <module>Common-Untils</module>
     </modules>
 
     <properties>

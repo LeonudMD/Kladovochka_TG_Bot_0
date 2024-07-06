@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Common-JPA/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Common-RabitMQ/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Common-Untils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Dispatcher/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Dispatcher/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Node_0/src/main/java" charset="UTF-8" />
