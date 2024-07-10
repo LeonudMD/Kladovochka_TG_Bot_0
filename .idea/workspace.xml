@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/AppUserServiceIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056/storage_v2/_src_/database/kladovochka_v0.mnQ3lQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056/storage_v2/_src_/database/kladovochka_v0.mnQ3lQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Enums/ServicesCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Enums/ServicesCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/MainServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/MainServiceIMPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Node_0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Node_0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +87,15 @@
       <recent name="org.example.DAO" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Mail_ServicesApplication">
-    <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Compound.AllRun">
+    <configuration name="AllRun" type="CompoundRunConfigurationType">
+      <toRun name="DispatcherApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="Mail_ServicesApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="Node_0Application" type="SpringBootApplicationConfigurationType" />
+      <toRun name="Rest_ServiceApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DispatcherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Dispatcher" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.DispatcherApplication" />
       <extension name="coverage">
@@ -95,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Mail_ServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Mail_ServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="MAIL_PASSWORD" value="dluhnnycoulmvsoo" />
         <env name="MAIL_USERNAME" value="LeonudCompani@yandex.ru" />
@@ -112,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Node_0Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Node_0Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Node_0" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Node_0Application" />
       <extension name="coverage">
@@ -125,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Rest_ServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="Rest_ServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Rest-Service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Rest_ServiceApplication" />
       <extension name="coverage">
@@ -139,19 +152,12 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Compound.AllRun" />
       <item itemvalue="Spring Boot.DispatcherApplication" />
       <item itemvalue="Spring Boot.Mail_ServicesApplication" />
       <item itemvalue="Spring Boot.Node_0Application" />
       <item itemvalue="Spring Boot.Rest_ServiceApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.Mail_ServicesApplication" />
-        <item itemvalue="Spring Boot.DispatcherApplication" />
-        <item itemvalue="Spring Boot.Rest_ServiceApplication" />
-        <item itemvalue="Spring Boot.Node_0Application" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -173,7 +179,7 @@
       <workItem from="1720084721154" duration="10264000" />
       <workItem from="1720161242347" duration="14332000" />
       <workItem from="1720259301935" duration="8161000" />
-      <workItem from="1720592786532" duration="8719000" />
+      <workItem from="1720592786532" duration="11675000" />
     </task>
     <servers />
   </component>
@@ -184,19 +190,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Rest_ServiceApplication.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateController.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Mail-Service/src/main/java/org/example/Controllers/MailController.java</url>
           <line>21</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/MainServiceIMPL.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/MainServiceIMPL.java</url>
+          <line>106</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

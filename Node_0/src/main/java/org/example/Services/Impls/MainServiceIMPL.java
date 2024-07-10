@@ -125,9 +125,11 @@ public class MainServiceIMPL implements MainService {
         var userState = appUser.getState();
         if (!appUser.getIsActive()) {
             var error = "Зарегистрируйтесь или активируйте свою учётную запись для загрузки контента.";
+            sendAnswer(error, chatID);
             return true;
         } else if (!BASIC_STATE.equals(userState)) {
             var error = "Отмените текущую команду с помощью /сфтсуд для отправки файлов";
+            sendAnswer(error, chatID);
             return true;
         }
         return false;
@@ -143,16 +145,23 @@ public class MainServiceIMPL implements MainService {
     }
 
     private String processServiceCommand(AppUsers appUser, String cmd) {
-        if (REGISTRATION.equals(cmd)) {
-            return appUserService.registerUser(appUser);
-        } else if (HELP.equals(cmd)) {
-            return help();
-        } else if (START.equals(cmd)) {
-            return "Приветствую! Чтобы узнать список всех доступных команд введите /help";
-        } else {
+        ServicesCommands serviceCommand = ServicesCommands.fromValue(cmd);
+        if (serviceCommand == null) {
             return "Неизвестная команда! Чтобы узнать список всех доступных команд введите /help";
         }
+
+        switch (serviceCommand) {
+            case REGISTRATION:
+                return appUserService.registerUser(appUser);
+            case HELP:
+                return help();
+            case START:
+                return "Приветствую! Чтобы узнать список всех доступных команд введите /help";
+            default:
+                return "Неизвестная команда! Чтобы узнать список всех доступных команд введите /help";
+        }
     }
+
 
     private String help() {
         return """
