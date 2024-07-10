@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Mail-Service/src/main/java/org/example/Mail_ServicesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Mail-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mail-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mail-Service/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -177,7 +171,7 @@
       <workItem from="1720084721154" duration="10264000" />
       <workItem from="1720161242347" duration="14332000" />
       <workItem from="1720259301935" duration="8161000" />
-      <workItem from="1720592786532" duration="1444000" />
+      <workItem from="1720592786532" duration="2043000" />
     </task>
     <servers />
   </component>
