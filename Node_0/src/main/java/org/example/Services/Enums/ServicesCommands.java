@@ -18,11 +18,12 @@ public enum ServicesCommands {
     }
 
     public static ServicesCommands fromValue(String v) {
-        for (ServicesCommands c: ServicesCommands.values()) {
+        for (ServicesCommands c : ServicesCommands.values()) {
             if (c.value.equals(v)) {
                 return c;
             }
         }
         return null;
     }
+
 }
