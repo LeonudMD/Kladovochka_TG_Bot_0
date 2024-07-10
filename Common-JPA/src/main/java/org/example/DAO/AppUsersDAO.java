@@ -3,7 +3,9 @@ package org.example.DAO;
 import org.example.Entity.AppUsers;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface AppUsersDAO extends JpaRepository<AppUsers, Long> {
+import java.util.Optional;
 
-    AppUsers findAppUsersByTelegramUserId(Long id);
+public interface AppUsersDAO extends JpaRepository<AppUsers, Long> {
+    Optional<AppUsers> findByTelegramUserId(Long id);
+
 }

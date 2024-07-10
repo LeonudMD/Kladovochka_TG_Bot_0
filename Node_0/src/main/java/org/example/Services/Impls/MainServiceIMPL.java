@@ -173,8 +173,8 @@ public class MainServiceIMPL implements MainService {
 
     private AppUsers findOrSaveUser(Update update) {
         User telegramUser = update.getMessage().getFrom();
-        AppUsers presistentAppUser = appUsersDAO.findAppUsersByTelegramUserId(telegramUser.getId());
-        if (presistentAppUser == null) {
+        var optional = appUsersDAO.findByTelegramUserId(telegramUser.getId());
+        if (optional.isEmpty()) {
             AppUsers transientAppUser = AppUsers.builder()
                     .telegramUserId(telegramUser.getId())
                     .userName(telegramUser.getUserName())
@@ -186,7 +186,7 @@ public class MainServiceIMPL implements MainService {
                     .build();
             return appUsersDAO.save(transientAppUser);
         }
-        return presistentAppUser;
+        return optional.get();
     }
 
     private void saveRawData(Update update) {
