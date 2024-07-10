@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Mail-Service/src/main/java/org/example/Controllers/MailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mail-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Mail-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mail-Service/src/main/java/org/example/DTO/MailParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-Untils/src/main/java/org/example/DTO/MailParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mail-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Mail-Service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +175,7 @@
       <workItem from="1720084721154" duration="10264000" />
       <workItem from="1720161242347" duration="14332000" />
       <workItem from="1720259301935" duration="8161000" />
-      <workItem from="1720592786532" duration="5887000" />
+      <workItem from="1720592786532" duration="6348000" />
     </task>
     <servers />
   </component>
