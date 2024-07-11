@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-raw_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-raw_data.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056/storage_v2/_src_/database/kladovochka_v0.mnQ3lQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8b50ebe8-1cc3-40c1-9aa8-9635e6843056/storage_v2/_src_/database/kladovochka_v0.mnQ3lQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppDocument.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppDocument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppPhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppPhoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common-JPA/src/main/java/org/example/Entity/AppUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_document.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_document.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_photo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_photo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_users.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-binary_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-binary_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-raw_data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-raw_data.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_document.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_document.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_photo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_photo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-app_users.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-binary_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-binary_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-raw_data.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/resources/db/changelog/v1.0/db.changelog-1.0-create-raw_data.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/Node_0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Node_0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +195,7 @@
       <workItem from="1720161242347" duration="14332000" />
       <workItem from="1720259301935" duration="8161000" />
       <workItem from="1720592786532" duration="15970000" />
-      <workItem from="1720687000421" duration="7263000" />
+      <workItem from="1720687000421" duration="7896000" />
     </task>
     <servers />
   </component>

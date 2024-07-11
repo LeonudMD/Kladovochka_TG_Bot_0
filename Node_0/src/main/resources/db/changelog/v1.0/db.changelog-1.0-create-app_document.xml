@@ -3,7 +3,7 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+           http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <!-- ChangeSet для создания таблицы app_document -->
     <changeSet id="2" author="Leonud">
@@ -13,20 +13,20 @@
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <!-- Столбец telegramFileId с типом VARCHAR(255) -->
-            <column name="telegramFileId" type="VARCHAR(255)"/>
-            <!-- Столбец docName с типом VARCHAR(255) -->
-            <column name="docName" type="VARCHAR(255)"/>
-            <!-- Столбец binaryContent_id с типом BIGINT, внешний ключ -->
-            <column name="binaryContent_id" type="BIGINT"/>
-            <!-- Столбец mimeType с типом VARCHAR(255) -->
-            <column name="mimeType" type="VARCHAR(255)"/>
-            <!-- Столбец fileSize с типом BIGINT -->
-            <column name="fileSize" type="BIGINT"/>
+            <!-- Столбец telegram_file_id с типом VARCHAR(255) -->
+            <column name="telegram_file_id" type="VARCHAR(255)"/>
+            <!-- Столбец doc_name с типом VARCHAR(255) -->
+            <column name="doc_name" type="VARCHAR(255)"/>
+            <!-- Столбец binary_content_id с типом BIGINT, внешний ключ -->
+            <column name="binary_content_id" type="BIGINT"/>
+            <!-- Столбец mime_type с типом VARCHAR(255) -->
+            <column name="mime_type" type="VARCHAR(255)"/>
+            <!-- Столбец file_size с типом BIGINT -->
+            <column name="file_size" type="BIGINT"/>
         </createTable>
-        <!-- Добавление внешнего ключа для binaryContent_id -->
+        <!-- Добавление внешнего ключа для binary_content_id -->
         <addForeignKeyConstraint baseTableName="app_document"
-                                 baseColumnNames="binaryContent_id"
+                                 baseColumnNames="binary_content_id"
                                  constraintName="fk_app_document_binary_content"
                                  referencedTableName="binary_content"
                                  referencedColumnNames="id"/>

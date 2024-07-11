@@ -3,7 +3,7 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+           http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <!-- ChangeSet для создания таблицы app_photo -->
     <changeSet id="3" author="Leonud">
@@ -13,16 +13,16 @@
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <!-- Столбец telegramFileId с типом VARCHAR(255) -->
-            <column name="telegramFileId" type="VARCHAR(255)"/>
-            <!-- Столбец binaryContent_id с типом BIGINT, внешний ключ -->
-            <column name="binaryContent_id" type="BIGINT"/>
-            <!-- Столбец fileSize с типом INTEGER -->
-            <column name="fileSize" type="INTEGER"/>
+            <!-- Столбец telegram_file_id с типом VARCHAR(255) -->
+            <column name="telegram_file_id" type="VARCHAR(255)"/>
+            <!-- Столбец binary_content_id с типом BIGINT, внешний ключ -->
+            <column name="binary_content_id" type="BIGINT"/>
+            <!-- Столбец file_size с типом INTEGER -->
+            <column name="file_size" type="INTEGER"/>
         </createTable>
-        <!-- Добавление внешнего ключа для binaryContent_id -->
+        <!-- Добавление внешнего ключа для binary_content_id -->
         <addForeignKeyConstraint baseTableName="app_photo"
-                                 baseColumnNames="binaryContent_id"
+                                 baseColumnNames="binary_content_id"
                                  constraintName="fk_app_photo_binary_content"
                                  referencedTableName="binary_content"
                                  referencedColumnNames="id"/>

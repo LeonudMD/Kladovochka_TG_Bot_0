@@ -3,7 +3,7 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+           http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <!-- ChangeSet для создания таблицы binary_content -->
     <changeSet id="1" author="Leonud">
@@ -13,8 +13,8 @@
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <!-- Столбец fileAsArrayOfBytes с типом BYTEA, не допускает NULL значений -->
-            <column name="fileAsArrayOfBytes" type="BYTEA">
+            <!-- Столбец file_as_array_of_bytes с типом BYTEA, не допускает NULL значений -->
+            <column name="file_as_array_of_bytes" type="BYTEA">
                 <constraints nullable="false"/>
             </column>
         </createTable>
