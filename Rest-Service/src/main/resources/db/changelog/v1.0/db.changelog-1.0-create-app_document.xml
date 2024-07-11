@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- ChangeSet для создания таблицы app_document -->
+    <changeSet id="2" author="Leonud">
+        <!-- Создание таблицы app_document -->
+        <createTable tableName="app_document">
+            <!-- Столбец id с типом BIGINT и автоинкрементом, первичный ключ, не допускает NULL значений -->
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <!-- Столбец telegramFileId с типом VARCHAR(255) -->
+            <column name="telegramFileId" type="VARCHAR(255)"/>
+            <!-- Столбец docName с типом VARCHAR(255) -->
+            <column name="docName" type="VARCHAR(255)"/>
+            <!-- Столбец binaryContent_id с типом BIGINT, внешний ключ -->
+            <column name="binaryContent_id" type="BIGINT"/>
+            <!-- Столбец mimeType с типом VARCHAR(255) -->
+            <column name="mimeType" type="VARCHAR(255)"/>
+            <!-- Столбец fileSize с типом BIGINT -->
+            <column name="fileSize" type="BIGINT"/>
+        </createTable>
+        <!-- Добавление внешнего ключа для binaryContent_id -->
+        <addForeignKeyConstraint baseTableName="app_document"
+                                 baseColumnNames="binaryContent_id"
+                                 constraintName="fk_app_document_binary_content"
+                                 referencedTableName="binary_content"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>

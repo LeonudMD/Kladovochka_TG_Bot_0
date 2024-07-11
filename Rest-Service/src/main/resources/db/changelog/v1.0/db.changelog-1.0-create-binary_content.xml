@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- ChangeSet для создания таблицы binary_content -->
+    <changeSet id="1" author="Leonud">
+        <!-- Создание таблицы binary_content -->
+        <createTable tableName="binary_content">
+            <!-- Столбец id с типом BIGINT и автоинкрементом, первичный ключ, не допускает NULL значений -->
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <!-- Столбец fileAsArrayOfBytes с типом BYTEA, не допускает NULL значений -->
+            <column name="fileAsArrayOfBytes" type="BYTEA">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
