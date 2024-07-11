@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1-insert-app_document" author="Leonud">
+        <insert tableName="app_document">
+            <column name="id" value="1"/>
+            <column name="telegram_file_id" value="BQACAgIAAxkBAAIBYGaPwT2vMdGrWBTo9R4QkRQTq2F4AAL_SwACN2yASMEUqhAFX0TJNQQ"/>
+            <column name="doc_name" value="image_2024-07-11_15-25-49.png"/>
+            <column name="binary_content_id" value="2"/>
+            <column name="mime_type" value="image/png"/>
+            <column name="file_size" value="71865"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -17886,3 +17886,7 @@
 2024-07-11 15:23:52 DEBUG ConsumerServiceIMPL:27 - NODE: Текстовое сообщение было доставленно
 2024-07-11 15:24:04 DEBUG ConsumerServiceIMPL:27 - NODE: Текстовое сообщение было доставленно
 2024-07-11 15:24:07 DEBUG ConsumerServiceIMPL:27 - NODE: Текстовое сообщение было доставленно
+2024-07-11 15:24:48 DEBUG ConsumerServiceIMPL:27 - NODE: Текстовое сообщение было доставленно
+2024-07-11 15:24:56 DEBUG ConsumerServiceIMPL:27 - NODE: Текстовое сообщение было доставленно
+2024-07-11 15:25:45 DEBUG ConsumerServiceIMPL:41 - NODE: Фото сообщение было доставленно
+2024-07-11 15:25:49 DEBUG ConsumerServiceIMPL:34 - NODE: Док сообщение было доставленно

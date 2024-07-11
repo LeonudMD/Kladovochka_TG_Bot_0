@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1-insert-binary_content" author="Leonud">
+        <insert tableName="binary_content">
+            <column name="id" value="1"/>
+            <column name="file_as_array_of_bytes" value="405x521 JPEG image 20,37 kB"/>
+        </insert>
+        <insert tableName="binary_content">
+            <column name="id" value="2"/>
+            <column name="file_as_array_of_bytes" value="405x521 PNG image 71,86 kB"/>
+        </insert>
+        <!-- Add more insert statements for other rows -->
+    </changeSet>
+
+</databaseChangeLog>
