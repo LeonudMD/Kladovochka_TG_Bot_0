@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- Включение файла миграций для таблицы binary_content -->
+    <include file="db/changelog/v1.0/create/db.changelog-1.0-create-binary_content.xml" />
+
+    <!-- Включение файла миграций для таблицы app_document -->
+    <include file="db/changelog/v1.0/create/db.changelog-1.0-create-app_document.xml" />
+
+    <!-- Включение файла миграций для таблицы app_photo -->
+    <include file="db/changelog/v1.0/create/db.changelog-1.0-create-app_photo.xml" />
+
+    <!-- Включение файла миграций для таблицы app_users -->
+    <include file="db/changelog/v1.0/create/db.changelog-1.0-create-app_users.xml" />
+
+    <!-- Включение файла миграций для таблицы raw_data -->
+    <include file="db/changelog/v1.0/create/db.changelog-1.0-create-raw_data.xml" />
+
+    <!-- Включение файла миграций для вставки данных -->
+    <include file="/db/changelog/v1.0/insert/db.changelog-1.0-insert-app_users.xml" />
+    <!-- СНАЧАЛА ЭТОТ ФАЙЛ ИЗ-ЗА ВНЕШНЕГО КЛЮЧА -->
+    <include file="/db/changelog/v1.0/insert/db.changelog-1.0-insert-binary_content.xml" />
+    <include file="/db/changelog/v1.0/insert/db.changelog-1.0-insert-app_document.xml" />
+    <include file="/db/changelog/v1.0/insert/db.changelog-1.0-insert-app_photo.xml" />
+    <include file="/db/changelog/v1.0/insert/db.changelog-1.0-insert-raw_data.xml" />
+
+</databaseChangeLog>

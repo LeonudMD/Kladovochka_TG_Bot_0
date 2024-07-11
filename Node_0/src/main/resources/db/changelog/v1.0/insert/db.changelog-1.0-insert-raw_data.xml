@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1-insert-raw_data" author="Leonud">
+        <insert tableName="raw_data">
+            <column name="id" value="1"/>
+            <column name="event">
+                <![CDATA[
+                {"message": {"chat": {"id": 933156718, "type": "private", "username": "Leonud_Z", "first_name": "Леонид"}, "date": 1720697088, "from": {"id": 933156718, "is_bot": false, "username": "Leonud_Z", "first_name": "Леонид", "language_code": "ru"}, "text": "/registration", "entities": [{"type": "bot_command", "length": 13, "offset": 0}], "message_id": 345}, "update_id": 695759138}
+                ]]>
+            </column>
+        </insert>
+
+        <insert tableName="raw_data">
+            <column name="id" value="2"/>
+            <column name="event">
+                <![CDATA[
+                {"message": {"chat": {"id": 933156718, "type": "private", "username": "Leonud_Z", "first_name": "Леонид"}, "date": 1720697096, "from": {"id": 933156718, "is_bot": false, "username": "Leonud_Z", "first_name": "Леонид", "language_code": "ru"}, "text": "x.1.x2@yandex.ru", "entities": [{"type": "email", "length": 16, "offset": 0}], "message_id": 347}, "update_id": 695759139}
+                ]]>
+            </column>
+        </insert>
+
+        <insert tableName="raw_data">
+            <column name="id" value="3"/>
+            <column name="event">
+                <![CDATA[
+                {"message": {"chat": {"id": 933156718, "type": "private", "username": "Leonud_Z", "first_name": "Леонид"}, "date": 1720697145, "from": {"id": 933156718, "is_bot": false, "username": "Leonud_Z", "first_name": "Леонид", "language_code": "ru"}, "photo": [{"width": 70, "height": 90, "file_id": "AgACAgIAAxkBAAIBXWaPwTlgk7w5a9ULcfOCAoOlPad5AAJj4TEbN2yASAepJa2AnPFXAQADAgADcwADNQQ", "file_size": 1593, "file_unique_id": "AQADY-ExGzdsgEh4"}, {"width": 249, "height": 320, "file_id": "AgACAgIAAxkBAAIBXWaPwTlgk7w5a9ULcfOCAoOlPad5AAJj4TEbN2yASAepJa2AnPFXAQADAgADbQADNQQ", "file_size": 12875, "file_unique_id": "AQADY-ExGzdsgEhy"}, {"width": 405, "height": 521, "file_id": "AgACAgIAAxkBAAIBXWaPwTlgk7w5a9ULcfOCAoOlPad5AAJj4TEbN2yASAepJa2AnPFXAQADAgADeAADNQQ", "file_size": 20366, "file_unique_id": "AQADY-ExGzdsgEh9"}], "message_id": 349}, "update_id": 695759140}
+                ]]>
+            </column>
+        </insert>
+
+        <insert tableName="raw_data">
+            <column name="id" value="4"/>
+            <column name="event">
+                <![CDATA[
+                {"message": {"chat": {"id": 933156718, "type": "private", "username": "Leonud_Z", "first_name": "Леонид"}, "date": 1720697149, "from": {"id": 933156718, "is_bot": false, "username": "Leonud_Z", "first_name": "Леонид", "language_code": "ru"}, "document": {"thumb": {"width": 249, "height": 320, "file_id": "AAMCAgADGQEAAgFgZo_BPa8x0atYFOj1HhCRFBOrYXgAAv9LAAI3bIBIwRSqEAVfRMkBAAdtAAM1BA", "file_size": 12349, "file_unique_id": "AQAD_0sAAjdsgEhy"}, "file_id": "BQACAgIAAxkBAAIBYGaPwT2vMdGrWBTo9R4QkRQTq2F4AAL_SwACN2yASMEUqhAFX0TJNQQ", "file_name": "image_2024-07-11_15-25-49.png", "file_size": 71865, "mime_type": "image/png", "file_unique_id": "AgAD_0sAAjdsgEg"}, "message_id": 352}, "update_id": 695759141}
+                ]]>
+            </column>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+           http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- ChangeSet для создания таблицы app_photo -->
+    <changeSet id="3" author="Leonud">
+        <!-- Создание таблицы app_photo -->
+        <createTable tableName="app_photo">
+            <!-- Столбец id с типом BIGINT и автоинкрементом, первичный ключ, не допускает NULL значений -->
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <!-- Столбец telegram_file_id с типом VARCHAR(255) -->
+            <column name="telegram_file_id" type="VARCHAR(255)"/>
+            <!-- Столбец binary_content_id с типом BIGINT, внешний ключ -->
+            <column name="binary_content_id" type="BIGINT"/>
+            <!-- Столбец file_size с типом INTEGER -->
+            <column name="file_size" type="INTEGER"/>
+        </createTable>
+        <!-- Добавление внешнего ключа для binary_content_id -->
+        <addForeignKeyConstraint baseTableName="app_photo"
+                                 baseColumnNames="binary_content_id"
+                                 constraintName="fk_app_photo_binary_content"
+                                 referencedTableName="binary_content"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>
