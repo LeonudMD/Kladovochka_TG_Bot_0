@@ -8,7 +8,6 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 import javax.persistence.*;
 
-//@Data
 @Getter
 @Setter
 @EqualsAndHashCode(exclude = "id")
@@ -16,15 +15,15 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Raw_Data")
+@Table(name = "raw_data")
 @TypeDef(name = "jsonb", typeClass = JsonBinaryType.class)
 public class RawData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
     @Type(type = "jsonb")
-    @Column(columnDefinition = "JsonB")
+    @Column(name = "event", columnDefinition = "JsonB")
     private Update event;
-
 }

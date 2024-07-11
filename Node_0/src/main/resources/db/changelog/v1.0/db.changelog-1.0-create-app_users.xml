@@ -3,37 +3,21 @@
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
-    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <!-- ChangeSet для создания таблицы app_users -->
-    <changeSet id="4" author="Leonud">
-        <!-- Создание таблицы app_users -->
+    <changeSet id="1" author="Leonud">
         <createTable tableName="app_users">
-            <!-- Столбец id с типом BIGINT и автоинкрементом, первичный ключ, не допускает NULL значений -->
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <!-- Столбец telegramUserId с типом BIGINT -->
             <column name="telegramUserId" type="BIGINT"/>
-            <!-- Столбец firstLoginDate с типом TIMESTAMP -->
             <column name="firstLoginDate" type="TIMESTAMP"/>
-            <!-- Столбец firstName с типом VARCHAR(255) -->
             <column name="firstName" type="VARCHAR(255)"/>
-            <!-- Столбец lastName с типом VARCHAR(255) -->
             <column name="lastName" type="VARCHAR(255)"/>
-            <!-- Столбец userName с типом VARCHAR(255) -->
             <column name="userName" type="VARCHAR(255)"/>
-            <!-- Столбец email с типом VARCHAR(255) -->
             <column name="email" type="VARCHAR(255)"/>
-            <!-- Столбец isActive с типом BOOLEAN -->
             <column name="isActive" type="BOOLEAN"/>
-            <!-- Столбец state с типом VARCHAR(50) -->
             <column name="state" type="VARCHAR(50)"/>
         </createTable>
-        <!-- Добавление индекса для столбца id -->
-        <createIndex indexName="idx_app_users_id" tableName="app_users">
-            <column name="id"/>
-        </createIndex>
     </changeSet>
-
 </databaseChangeLog>

@@ -17,4 +17,7 @@
     <!-- Включение файла миграций для таблицы app_users -->
     <include file="db/changelog/v1.0/db.changelog-1.0-create-app_users.xml"/>
 
+    <!-- Включение файла миграций для таблицы raw_data -->
+    <include file="db/changelog/v1.0/db.changelog-1.0-create-raw_data.xml"/>
+
 </databaseChangeLog>
