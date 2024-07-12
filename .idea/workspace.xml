@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impls/AnswerConsumerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impls/AnswerConsumerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +91,7 @@
       <recent name="org.example.DAO" />
     </key>
   </component>
-  <component name="RunManager" selected="Compound.AllRun">
+  <component name="RunManager" selected="Spring Boot.DispatcherApplication">
     <configuration name="AllRun" type="CompoundRunConfigurationType">
       <toRun name="DispatcherApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="Mail_ServicesApplication" type="SpringBootApplicationConfigurationType" />
@@ -188,7 +185,7 @@
       <workItem from="1720259301935" duration="8161000" />
       <workItem from="1720592786532" duration="15970000" />
       <workItem from="1720687000421" duration="14535000" />
-      <workItem from="1720768268027" duration="2591000" />
+      <workItem from="1720768268027" duration="3287000" />
     </task>
     <servers />
   </component>
@@ -212,6 +209,11 @@
           <url>file://$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/MainServiceIMPL.java</url>
           <line>106</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/WebHookController.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
