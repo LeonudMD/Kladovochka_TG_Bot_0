@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="" />
+    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Configurations/RabbitConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Configurations/RabbitConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/UpdateProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/WebHookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/WebHookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/AnswerConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/AnswerConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impls/AnswerConsumerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impls/AnswerConsumerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impls/UpdateProducerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Services/Impls/UpdateProducerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Utils/MessageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Utils/MessageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Node_0/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Node_0/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -206,11 +220,6 @@
           <url>file://$PROJECT_DIR$/Node_0/src/main/java/org/example/Services/Impls/MainServiceIMPL.java</url>
           <line>106</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/WebHookController.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
