@@ -1,9 +1,9 @@
 package org.example.Controllers;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j;
 import org.example.Services.FileService;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -13,19 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Log4j
+@RequiredArgsConstructor
 @RequestMapping("/file")
 @RestController
 public class FileController {
     private final FileService fileService;
 
-
-    public FileController(FileService fileService) {
-        this.fileService = fileService;
-    }
-
     @RequestMapping(method = RequestMethod.GET, value = "/get-doc")
     public void getDoc(@RequestParam("id") String id, HttpServletResponse response) {
-        //TODO для формирования badRequest добавить ControllerAdvice
         var doc = fileService.getDocument(id);
         if (doc == null) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
@@ -50,7 +45,6 @@ public class FileController {
 
     @RequestMapping(method = RequestMethod.GET, value = "/get-photo")
     public void getPhoto(@RequestParam("id") String id, HttpServletResponse response) {
-        //TODO для формирования badRequest добавить ControllerAdvice
         var photo = fileService.getPhoto(id);
         if (photo == null) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);

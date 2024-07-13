@@ -6,6 +6,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 
 @Component
 public class MessageUtils {
+
     public SendMessage generateSendMessageWhisText(Update update, String text) {
         var message = update.getMessage();
         var sendMessage = new SendMessage();
