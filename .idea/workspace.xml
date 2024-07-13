@@ -101,7 +101,7 @@
       <recent name="org.example.DAO" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Node_0Application">
+  <component name="RunManager" selected="Compound.AllRun">
     <configuration name="AllRun" type="CompoundRunConfigurationType">
       <toRun name="DispatcherApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="Mail_ServicesApplication" type="SpringBootApplicationConfigurationType" />
