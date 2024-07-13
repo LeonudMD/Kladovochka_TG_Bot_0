@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.bots.TelegramWebhookBot;
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -28,7 +27,7 @@ public class TelegramBot extends TelegramWebhookBot {
     @Value("${bot.uri}")
     private String botUri;
 
-    private UpdateProcessor updateProcessor;
+    private final UpdateProcessor updateProcessor;
 
     @PostConstruct
     public void init() {
@@ -43,7 +42,6 @@ public class TelegramBot extends TelegramWebhookBot {
         }
     }
 
-
     @Override
     public String getBotUsername() {
         return botName;
@@ -54,7 +52,6 @@ public class TelegramBot extends TelegramWebhookBot {
         return botToken;
     }
 
-
     public void sendAnswerMessage(SendMessage message) {
         if (message != null) {
             try {
@@ -64,7 +61,6 @@ public class TelegramBot extends TelegramWebhookBot {
             }
         }
     }
-
 
     @Override
     public BotApiMethod<?> onWebhookUpdateReceived(Update update) {

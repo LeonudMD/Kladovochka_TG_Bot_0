@@ -1,5 +1,6 @@
 package org.example.Services.IMPL;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j;
 import org.example.DAO.AppDocumentDAO;
 import org.example.DAO.AppPhotoDAO;
@@ -16,19 +17,15 @@ import java.io.File;
 import java.io.IOException;
 
 @Log4j
+@RequiredArgsConstructor
 @Service
 public class FileServiceIMPL implements FileService {
-    private final AppDocumentDAO appDocumentDAO;
-    private final AppPhotoDAO appPhotoDAO;
-    private final CryptoTool cryptoTool;
 
-    public FileServiceIMPL(AppDocumentDAO appDocumentDAO,
-                           AppPhotoDAO appPhotoDAO,
-                           CryptoTool cryptoTool) {
-        this.appDocumentDAO = appDocumentDAO;
-        this.appPhotoDAO = appPhotoDAO;
-        this.cryptoTool = cryptoTool;
-    }
+    private final AppDocumentDAO appDocumentDAO;
+
+    private final AppPhotoDAO appPhotoDAO;
+
+    private final CryptoTool cryptoTool;
 
     @Override
     public AppDocument getDocument(String hash) {

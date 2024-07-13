@@ -1,19 +1,18 @@
 package org.example.Services.IMPL;
 
+import lombok.RequiredArgsConstructor;
 import org.example.DAO.AppUsersDAO;
 import org.example.Services.UserActivationService;
 import org.example.Utils.CryptoTool;
 import org.springframework.stereotype.Service;
 
+@RequiredArgsConstructor
 @Service
 public class UserActivationServiceIMPL implements UserActivationService {
-    private final AppUsersDAO appUsersDAO;
-    private final CryptoTool cryptoTool;
 
-    public UserActivationServiceIMPL(AppUsersDAO appUsersDAO, CryptoTool cryptoTool) {
-        this.appUsersDAO = appUsersDAO;
-        this.cryptoTool = cryptoTool;
-    }
+    private final AppUsersDAO appUsersDAO;
+
+    private final CryptoTool cryptoTool;
 
     @Override
     public boolean activation(String cryptoUserId) {

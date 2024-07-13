@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 
-
 @Log4j
 @RequiredArgsConstructor
 @Component
@@ -17,64 +16,48 @@ public class UpdateProcessor {
 
     private TelegramBot tgBot;
 
-    private MessageUtils messageUtils;
-
-    private UpdateProducer updateProducer;
-
+    private final MessageUtils messageUtils;
+    private final UpdateProducer updateProducer;
     private final RabbitConfiguration rabbitConfiguration;
 
     public void registerBot(TelegramBot tgBot) {
         this.tgBot = tgBot;
     }
-    
-    public void processUpdate(Update update) {
 
+    public void processUpdate(Update update) {
         if (update == null){
             log.error("Полученное сообщение равно null");
             return;
         }
-        
+
         if (update.hasMessage()) {
             distributeMessangesbyType(update);
-        }
-        else {
+        } else {
             log.error("Получен необрабатываемый тип сообщения: " + update);
         }
-
     }
 
     private void distributeMessangesbyType(Update update) {
-
         var message = update.getMessage();
         if (message.hasText()) {
             processTextMessage(update);
-        }
-        else if (message.hasDocument()) {
+        } else if (message.hasDocument()) {
             processDocMessage(update);
-        }
-        else if (message.hasPhoto()) {
+        } else if (message.hasPhoto()) {
             processPhotoMessage(update);
-        }
-        else {
+        } else {
             setUnsupportedMessageTypeView(update);
         }
-
     }
 
     private void setUnsupportedMessageTypeView(Update update) {
-
-        var sendMessage = messageUtils.generateSendMessageWhisText(update,
-                "Неподдерживаемый тип сообщения!");
+        var sendMessage = messageUtils.generateSendMessageWhisText(update, "Неподдерживаемый тип сообщения!");
         setView(sendMessage);
-
     }
 
     private void setFileIsReceiveView(Update update) {
-
-        var sendMessage = messageUtils.generateSendMessageWhisText(update,
-                "Файл получен. Идёт обработка...");
+        var sendMessage = messageUtils.generateSendMessageWhisText(update, "Файл получен. Идёт обработка...");
         setView(sendMessage);
-
     }
 
     public void setView(SendMessage sendMessage) {
@@ -87,15 +70,11 @@ public class UpdateProcessor {
     }
 
     private void processDocMessage(Update update) {
-        updateProducer.producer(rabbitConfiguration.getPhotoMessageUpdateQueue(),
-                update);
+        updateProducer.producer(rabbitConfiguration.getPhotoMessageUpdateQueue(), update);
         setFileIsReceiveView(update);
     }
 
     private void processTextMessage(Update update) {
         updateProducer.producer(rabbitConfiguration.getTextMessageUpdateQueue(), update);
     }
-
-
 }
-

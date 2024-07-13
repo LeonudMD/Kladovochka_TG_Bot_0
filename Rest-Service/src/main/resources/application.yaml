@@ -1,0 +1,16 @@
+server:
+  port: 8086
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5400/kladovochka_v0
+    username: userok
+    password: p@ssw0rd
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
+salt: 6e1D3q8DTLLEur74UNltRcrI9Q6v7jAqhEnbvXYz3leOuEmmB4
