@@ -187,3 +187,4 @@
 2024-07-13 17:13:34 ERROR TelegramBot:60 - Error executing org.telegram.telegrambots.meta.api.methods.send.SendMessage query: [401] Unauthorized
 2024-07-13 17:13:34 ERROR TelegramBot:60 - Error executing org.telegram.telegrambots.meta.api.methods.send.SendMessage query: [401] Unauthorized
 2024-07-13 17:13:34 ERROR TelegramBot:60 - Error executing org.telegram.telegrambots.meta.api.methods.send.SendMessage query: [401] Unauthorized
+2024-07-13 17:14:22 ERROR TelegramBot:41 - Error executing org.telegram.telegrambots.meta.api.methods.updates.SetWebhook query: [401] Unauthorized

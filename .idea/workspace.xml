@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/java/org/example/Controllers/TelegramBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Configurations/RestServicesConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Configurations/RestServicesConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Controllers/ActivationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Controllers/ActivationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Controllers/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Controllers/FileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Services/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Services/FileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Services/IMPL/FileServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Services/IMPL/FileServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Services/IMPL/UserActivationServiceIMPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Services/IMPL/UserActivationServiceIMPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Services/UserActivationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/java/org/example/Services/UserActivationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-Service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dispatcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dispatcher.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +185,7 @@
       <workItem from="1720592786532" duration="15970000" />
       <workItem from="1720687000421" duration="14535000" />
       <workItem from="1720768268027" duration="3287000" />
-      <workItem from="1720858157667" duration="4710000" />
+      <workItem from="1720858157667" duration="5033000" />
     </task>
     <servers />
   </component>
