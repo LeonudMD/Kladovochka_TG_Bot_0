@@ -1,5 +1,6 @@
 package org.example.Services.Impls;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j;
 import org.example.DAO.AppUsersDAO;
 import org.example.DAO.RawDataDAO;
@@ -19,35 +20,29 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.api.objects.User;
 
+import javax.transaction.Transactional;
+
 import static org.example.Entity.Enums.UsersState.BASIC_STATE;
 import static org.example.Entity.Enums.UsersState.WAIT_FOR_EMAIL_STATE;
 import static org.example.Services.Enums.ServicesCommands.CANCEL;
-import static org.example.Services.Enums.ServicesCommands.HELP;
-import static org.example.Services.Enums.ServicesCommands.REGISTRATION;
-import static org.example.Services.Enums.ServicesCommands.START;
 
-@Service
+
 @Log4j
+@RequiredArgsConstructor
+@Service
 public class MainServiceIMPL implements MainService {
+
     private final RawDataDAO rawDataDAO;
+
     private final ProducerService producerService;
+
     private final AppUsersDAO appUsersDAO;
+
     private final FileService fileService;
+
     private final AppUserService appUserService;
 
-
-    public MainServiceIMPL(RawDataDAO rawDataDAO,
-                           ProducerService producerService,
-                           AppUsersDAO appUsersDAO,
-                           FileService fileService,
-                           AppUserService appUserService) {
-        this.rawDataDAO = rawDataDAO;
-        this.producerService = producerService;
-        this.appUsersDAO = appUsersDAO;
-        this.fileService = fileService;
-        this.appUserService = appUserService;
-    }
-
+    @Transactional
     @Override
     public void processTextMessage(Update update) {
         saveRawData(update);
@@ -76,11 +71,9 @@ public class MainServiceIMPL implements MainService {
     @Override
     public void processDocMessage(Update update) {
         saveRawData(update);
-
-        var chatID = update.getMessage().getChatId();
         var appUser = findOrSaveUser(update);
-
-        if (isNotAllowToSendContent(chatID, appUser)) {
+        var chatId = update.getMessage().getChatId();
+        if (isNotAllowToSendContent(chatId, appUser)) {
             return;
         }
 
@@ -89,22 +82,20 @@ public class MainServiceIMPL implements MainService {
             String link = fileService.generateLink(doc.getId(), LinkType.GET_DOC);
             var answer = "Документ успешно загружен! "
                     + "Ссылка для скачивания: " + link;
-            sendAnswer(answer, chatID);
+            sendAnswer(answer, chatId);
         } catch (UploadFileException ex) {
             log.error(ex);
             String error = "К сожалению, загрузка файла не удалась. Повторите попытку позже.";
-            sendAnswer(error, chatID);
+            sendAnswer(error, chatId);
         }
     }
 
     @Override
     public void processPhotoMessage(Update update) {
         saveRawData(update);
-
-        var chatID = update.getMessage().getChatId();
         var appUser = findOrSaveUser(update);
-
-        if (isNotAllowToSendContent(chatID, appUser)) {
+        var chatId = update.getMessage().getChatId();
+        if (isNotAllowToSendContent(chatId, appUser)) {
             return;
         }
 
@@ -113,11 +104,11 @@ public class MainServiceIMPL implements MainService {
             String link = fileService.generateLink(photo.getId(), LinkType.GET_PHOTO);
             var answer = "Фото успешно загружено! "
                     + "Ссылка для скачивания: " + link;
-            sendAnswer(answer, chatID);
+            sendAnswer(answer, chatId);
         } catch (UploadFileException ex) {
             log.error(ex);
             String error = "К сожалению, загрузка фото не удалась. Повторите попытку позже.";
-            sendAnswer(error, chatID);
+            sendAnswer(error, chatId);
         }
     }
 
@@ -137,7 +128,7 @@ public class MainServiceIMPL implements MainService {
 
     private void sendAnswer(String output, Long chatID) {
 
-        SendMessage sendMessage = new SendMessage();
+        var sendMessage = new SendMessage();
         sendMessage.setChatId(chatID);
         sendMessage.setText(output);
         producerService.produceAnswer(sendMessage);

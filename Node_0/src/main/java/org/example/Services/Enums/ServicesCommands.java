@@ -3,9 +3,13 @@ package org.example.Services.Enums;
 public enum ServicesCommands {
 
     HELP("/help"),
+
     REGISTRATION("/registration"),
+
     CANCEL("/cancel"),
+
     START("/start");
+
     private final String value;
 
     ServicesCommands(String value) {

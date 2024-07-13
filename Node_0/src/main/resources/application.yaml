@@ -1,0 +1,37 @@
+server:
+  port: 8085
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: userok
+    password: p@ssw0rd
+
+  datasource:
+    url: jdbc:postgresql://localhost:5400/kladovochka_v0
+    username: userok
+    password: p@ssw0rd
+
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: none
+
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
+token: 6859161418:AAG1UEX1xTS-Kmh3vZdGB57kflLwfoVKEtM
+
+service:
+  file_info:
+    uri: https://api.telegram.org/bot{token}/getFile?file_id={fileId}
+  file_storage:
+    uri: https://api.telegram.org/file/bot{token}/{filePath}
+  mail:
+    uri: http://127.0.0.1:8087/mail/send
+
+link:
+  address: 127.0.0.1:8086
+
+salt: 6e1D3q8DTLLEur74UNltRcrI9Q6v7jAqhEnbvXYz3leOuEmmB4
