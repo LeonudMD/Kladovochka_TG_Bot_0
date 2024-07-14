@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="" />
+    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "DockerCompose",
     "jdk.selected.JAVA_MODULE": "19",
     "last_opened_file_path": "C:/Users/1/Desktop/Kladovochka_V0/Rest-Service/src/main/resources/db/changelog/v1.0",
     "node.js.detected.package.eslint": "true",
@@ -184,6 +187,7 @@
       <workItem from="1720687000421" duration="14535000" />
       <workItem from="1720768268027" duration="3287000" />
       <workItem from="1720858157667" duration="5033000" />
+      <workItem from="1720954600151" duration="2124000" />
     </task>
     <servers />
   </component>
