@@ -1,23 +1,23 @@
 server:
-  port: 8085
+  port: ${NODE_PORT}
 
 spring:
   rabbitmq:
-    host: localhost
-    port: 5672
-    username: userok
-    password: p@ssw0rd
+    host: ${RABBIT_HOST}
+    port: ${RABBIT_PORT}
+    username: ${RABBIT_USERNAME}
+    password: ${RABBIT_PASSWORD}
     queues:
-      text-message-update: text_message_update
-      doc-message-update: doc_message_update
-      photo-message-update: photo_message_update
-      answer-message: answer_message
-      registration-mail: registration_mail
+      text-message-update: ${RABBIT_TEXT_MESSAGE_UPDATE_QUEUE}
+      doc-message-update: ${RABBIT_DOC_MESSAGE_UPDATE_QUEUE}
+      photo-message-update: ${RABBIT_PHOTO_MESSAGE_UPDATE_QUEUE}
+      answer-message: ${RABBIT_ANSWER_MESSAGE_QUEUE}
+      registration-mail: ${RABBIT_REGISTRATION_MAIL_QUEUE}
 
   datasource:
-    url: jdbc:postgresql://localhost:5400/kladovochka_v0
-    username: userok
-    password: p@ssw0rd
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
 
   jpa:
     generate-ddl: false
@@ -27,17 +27,17 @@ spring:
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.xml
 
-token: 6859161418:AAG1UEX1xTS-Kmh3vZdGB57kflLwfoVKEtM
+token: ${TG_BOT_TOKEN}
 
 service:
   file_info:
-    uri: https://api.telegram.org/bot{token}/getFile?file_id={fileId}
+    uri: ${TG_BOT_FILE_INFO_URI}
   file_storage:
-    uri: https://api.telegram.org/file/bot{token}/{filePath}
+    uri: ${TG_BOT_FILE_STORAGE_URI}
   mail:
-    uri: http://127.0.0.1:8087/mail/send
+    uri: http://127.0.0.1:${MAIL_SERVICE_PORT}/mail/send
 
 link:
-  address: 127.0.0.1:8086
+  address: ${HOST_URL}:${REST_SERVICE_PORT}
 
-salt: 6e1D3q8DTLLEur74UNltRcrI9Q6v7jAqhEnbvXYz3leOuEmmB4
+salt: ${SALT}

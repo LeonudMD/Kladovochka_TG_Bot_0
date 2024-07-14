@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="" />
+    <list default="true" id="538f6cc5-7406-41b6-8019-cb3bbbb091ee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dispatcher/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Dispatcher/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mail-Service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Mail-Service/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +51,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "DockerCompose",
     "jdk.selected.JAVA_MODULE": "19",
     "last_opened_file_path": "C:/Users/1/Desktop/Kladovochka_V0/Rest-Service/src/main/resources/db/changelog/v1.0",
     "node.js.detected.package.eslint": "true",
@@ -88,7 +92,7 @@
       <recent name="org.example.DAO" />
     </key>
   </component>
-  <component name="RunManager" selected="Compound.AllRun">
+  <component name="RunManager" selected="Spring Boot.Mail_ServicesApplication">
     <configuration name="AllRun" type="CompoundRunConfigurationType">
       <toRun name="DispatcherApplication" type="SpringBootApplicationConfigurationType" />
       <toRun name="Mail_ServicesApplication" type="SpringBootApplicationConfigurationType" />
@@ -111,8 +115,8 @@
     </configuration>
     <configuration name="Mail_ServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
-        <env name="MAIL_PASSWORD" value="dluhnnycoulmvsoo" />
-        <env name="MAIL_USERNAME" value="LeonudCompani@yandex.ru" />
+        <env name="MAIL_PASSWORD_IDEA" value="dluhnnycoulmvsoo" />
+        <env name="MAIL_USERNAME_IDEA" value="LeonudCompani@yandex.ru" />
       </envs>
       <module name="Mail-Service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Mail_ServicesApplication" />
@@ -184,6 +188,7 @@
       <workItem from="1720687000421" duration="14535000" />
       <workItem from="1720768268027" duration="3287000" />
       <workItem from="1720858157667" duration="5033000" />
+      <workItem from="1720954600151" duration="2532000" />
     </task>
     <servers />
   </component>
