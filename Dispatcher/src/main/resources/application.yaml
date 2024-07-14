@@ -1,21 +1,21 @@
 server:
-  port: 8084
+  port: ${DISPATCHER_PORT}
   ssl:
     enabled: false
 
 bot:
-  name: kladovochka_lmd_bot
-  token: 5502187775:AAGhk05dnYy6e5SQtrjgNaDyMLtGgoirRIg
-  uri: https://five-spiders-write.loca.lt
+  name: ${TG_BOT_NAME}
+  token: ${TG_BOT_TOKEN}
+  uri: ${TG_BOT_URI}
 
 spring:
   rabbitmq:
-    host: localhost
-    port: 5672
-    username: userok
-    password: p@ssw0rd
+    host: ${RABBIT_HOST}
+    port: ${RABBIT_PORT}
+    username: ${RABBIT_USERNAME}
+    password: ${RABBIT_PASSWORD}
     queues:
-      text-message-update: text_message_update
-      doc-message-update: doc_message_update
-      photo-message-update: photo_message_update
-      answer-message: answer_message
+      text-message-update: ${RABBIT_TEXT_MESSAGE_UPDATE_QUEUE}
+      doc-message-update: ${RABBIT_DOC_MESSAGE_UPDATE_QUEUE}
+      photo-message-update: ${RABBIT_PHOTO_MESSAGE_UPDATE_QUEUE}
+      answer-message: ${RABBIT_ANSWER_MESSAGE_QUEUE}
